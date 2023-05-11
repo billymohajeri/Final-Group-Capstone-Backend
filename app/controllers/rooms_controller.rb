@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
   before_action :set_room, only: %i[show update destroy]
-
+  before_action :authenticate_user!
   # GET /rooms
   def index
     @rooms = Room.all
