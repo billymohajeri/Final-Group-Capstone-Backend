@@ -1,5 +1,5 @@
 require 'swagger_helper'
-
+# rubocop:disable Metrics/BlockLength
 RSpec.describe 'users', type: :request do
   path '/users' do
     get('list users') do
@@ -105,3 +105,4 @@ RSpec.describe 'users', type: :request do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength

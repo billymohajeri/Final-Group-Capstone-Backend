@@ -1,4 +1,5 @@
 require 'swagger_helper'
+# rubocop:disable Metrics/BlockLength
 
 RSpec.describe 'rooms', type: :request do
   path '/rooms' do
@@ -110,3 +111,4 @@ RSpec.describe 'rooms', type: :request do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
