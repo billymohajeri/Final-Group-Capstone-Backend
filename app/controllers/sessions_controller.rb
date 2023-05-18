@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   def current_user
     if session[:user_id]
       user = User.find(session[:user_id])
-      render json: { username: user.username }
+      render json: { id: user.id, username: user.username }
     else
       render json: { message: 'Not logged in' }, status: :unauthorized
     end
