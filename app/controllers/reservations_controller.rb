@@ -16,7 +16,7 @@ class ReservationsController < ApplicationController
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
-    @reservation.room_name = @reservation.room.name
+    @reservation.room_name = @reservation.g_room_name
 
     if @reservation.save
       render json: @reservation, status: :created, location: @reservation
