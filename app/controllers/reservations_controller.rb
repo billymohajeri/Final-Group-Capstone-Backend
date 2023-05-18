@@ -1,9 +1,9 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: %i[show update destroy]
-  before_action :authenticate_user!
+
   # GET /reservations
   def index
-    @reservations = Reservation.all
+    @reservations = Reservation.includes(:room).all
 
     render json: @reservations
   end
@@ -16,6 +16,7 @@ class ReservationsController < ApplicationController
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.room_name = @reservation.room.name
 
     if @reservation.save
       render json: @reservation, status: :created, location: @reservation
@@ -47,6 +48,6 @@ class ReservationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def reservation_params
-    params.require(:reservation).permit(:date, :city, :user_id, :room_id)
+    params.require(:reservation).permit(:date, :city, :user_id, :room_id, :room_name)
   end
 end
