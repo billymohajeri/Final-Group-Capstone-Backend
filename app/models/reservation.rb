@@ -10,4 +10,8 @@ class Reservation < ApplicationRecord
 
     errors.add(:base, 'This room is already reserved for this date')
   end
+
+  def g_room_name
+    room.name
+  end
 end
