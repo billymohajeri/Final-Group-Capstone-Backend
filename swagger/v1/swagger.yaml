@@ -1,0 +1,197 @@
+---
+openapi: 3.0.1
+info:
+  title: HOTEL BOOKING API V1
+  version: v1
+paths:
+  '/reservations':
+    get:
+      summary: list reservations
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create reservation
+      parameters: []
+      responses:
+        '200':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: integer
+                room_id:
+                  type: integer
+                city:
+                  type: string
+                date:
+                  type: string
+              required:
+                - user_id
+                - room_id
+                - city
+                - date
+  '/reservations/{id}':
+    parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: string
+    get:
+      summary: show reservation
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update reservation
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update reservation
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete reservation
+      responses:
+        '200':
+          description: successful
+  '/rooms':
+    get:
+      summary: list rooms
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create room
+      parameters: []
+      responses:
+        '200':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                wifi:
+                  type: string
+                tv:
+                  type: string
+                room_service:
+                  type: string
+                beds:
+                  type: integer
+                image_url:
+                  type: string
+                reserved:
+                  type: boolean
+              required:
+                - name
+                - description
+                - wifi
+                - tv
+                - room_service
+                - beds
+                - image_url
+                - reserved
+  '/rooms/{id}':
+    parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: string
+    get:
+      summary: show room
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update room
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update room
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete room
+      responses:
+        '200':
+          description: successful
+  '/users':
+    get:
+      summary: list users
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: create user
+      parameters: []
+      responses:
+        '200':
+          description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+                password_confirmation:
+                  type: string
+              required:
+                - username
+                - password
+                - password_confirmation
+  '/users/{id}':
+    parameters:
+      - name: id
+        in: path
+        description: id
+        required: true
+        schema:
+          type: string
+    get:
+      summary: show user
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: update user
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update user
+      responses:
+        '200':
+          description: successful
+    delete:
+      summary: delete user
+      responses:
+        '200':
+          description: successful
+servers:
+  - url: http://{defaultHost}
+    variables:
+      defaultHost:
+        default: localhost:3000
