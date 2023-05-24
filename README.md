@@ -62,8 +62,8 @@ After launching a local server, this link provides access to API documentation: 
 ### Key Features <a name="key-features"></a>
 
 - **Create new user**
-- **Create new room**
-- **Delete room**
+- **Create new cottage**
+- **Delete cottage**
 - **Add reservation**
 - **Display my reservations list**
 
