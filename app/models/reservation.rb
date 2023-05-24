@@ -8,7 +8,7 @@ class Reservation < ApplicationRecord
   def unique_room_date
     return unless Reservation.where(room_id:, date:).exists?
 
-    errors.add(:base, 'This room is already reserved for this date')
+    errors.add(:base, 'This cottage is already reserved for this date')
   end
 
   def g_room_name
