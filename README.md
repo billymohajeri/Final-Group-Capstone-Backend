@@ -21,6 +21,8 @@
 
 **Cottage booking app** is a booking app that allows users to search a list of available cottages and make reservations. This is the backend repository.
 
+Frontend repo is [here](https://github.com/billymohajeri/Final-Group-Capstone-Frontend)
+
 After launching a local server, this link provides access to API documentation: http://localhost:3000/api-docs/index.html
 
 ## 🛠 Built With <a name="built-with"></a>
