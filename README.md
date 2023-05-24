@@ -17,9 +17,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Hotel booking app <a name="about-project"></a>
+# 📖  booking app <a name="about-project"></a>
 
-**Hotel booking app** is a booking app that allows users to search a list of available rooms and make 24-hour reservations. This is the backend repository.
+**Cottage booking app** is a booking app that allows users to search a list of available cottages and make reservations. This is the backend repository.
 
 After launching a local server, this link provides access to API documentation: http://localhost:3000/api-docs/index.html
 
@@ -150,7 +150,7 @@ Install the frontend project with:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Kanban Board <a name="kanban"></a>
+## 📊 Kanban Board <a name="kanban"></a>
 
 - Link to Kanban Board: [Kanban](https://github.com/users/billymohajeri/projects/6/views/1)
 - Initial state of Kanban board: [Kanban Image](https://user-images.githubusercontent.com/58295348/237707763-a4569c96-d090-4692-92d4-93f411c10427.png) 
