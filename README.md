@@ -187,6 +187,10 @@ If you like this project, please consider giving it a star.
 
 - Original design idea by [Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign).
 
+📸 Photos:
+- [Houses Cottages](https://stocksnap.io/photo/houses-cottages-7KUECPAQ80) at Free Stock Image by 👤 Arno Smit
+- [Wishbone Cottage, Malvern Hills](https://www.countryliving.com/uk/travel-ideas/staycation-uk/g25857853/cottages-rent-uk/?slide=9) at Unique Home Stays by 👤 Mark Watts
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
