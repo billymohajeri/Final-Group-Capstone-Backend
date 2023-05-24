@@ -17,7 +17,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖  booking app <a name="about-project"></a>
+# 📖 Cottage booking app <a name="about-project"></a>
 
 **Cottage booking app** is a booking app that allows users to search a list of available cottages and make reservations. This is the backend repository.
 
