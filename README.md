@@ -73,7 +73,7 @@ After launching a local server, this link provides access to API documentation: 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Not yet...]()
+[Live Demo](https://final-group-capstone-frontend-git-deploy-billymohajeri.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
