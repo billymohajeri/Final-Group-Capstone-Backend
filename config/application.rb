@@ -1,6 +1,5 @@
 require_relative "boot"
 require 'dotenv/load'
-require 'sprockets/railtie'
 
 require "rails/all"
 
