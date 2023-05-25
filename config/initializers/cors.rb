@@ -7,7 +7,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://localhost:3001'
+    origins 'final-group-capstone-frontend-git-deploy-billymohajeri.vercel.app', 'final-group-capstone-frontend-qr2fx6teu-billymohajeri.vercel.app'
+    
+    
 
     resource "*",
       headers: :any,
